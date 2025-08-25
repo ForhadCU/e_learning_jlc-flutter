@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '../../../UTILS/helpers/helper_functions.dart';
 import '../../../utils/constants/colors.dart';
 import '../../../utils/constants/sizes.dart';
-import '../../../utils/helpers/helper_functions.dart';
 
 class MyCircularIcon extends StatelessWidget {
   /// A custom Circular Icon widget with a background color
@@ -37,7 +37,7 @@ class MyCircularIcon extends StatelessWidget {
         borderRadius: BorderRadius.circular(100),
         color: backgroundColor != null
             ? backgroundColor!
-            : MyHelperFunctions.isDarkMode(context)
+            : THelperFunctions.isDarkMode(context)
             ? TColors.black.withOpacity(.8)
             : TColors.white.withOpacity(.8),
       ),

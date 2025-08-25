@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
+import '../../../../UTILS/helpers/helper_functions.dart';
 import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/sizes.dart';
 import '../../../../utils/device/device_utility.dart';
-import '../../../../utils/helpers/helper_functions.dart';
 
 class MySearchContainer extends StatelessWidget {
   const MySearchContainer({
@@ -21,7 +21,7 @@ class MySearchContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = MyHelperFunctions.isDarkMode(context);
+    final dark = THelperFunctions.isDarkMode(context);
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: TSizes.defaultSpace),
       child: Container(
