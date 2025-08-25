@@ -4,9 +4,11 @@ part of 'app_pages.dart';
 abstract class Routes {
   Routes._();
   static const HOME = _Paths.HOME;
+  static const FLIP_CARD_GAME = _Paths.FLIP_CARD_GAME;
 }
 
 abstract class _Paths {
   _Paths._();
   static const HOME = '/home';
+  static const FLIP_CARD_GAME = '/flip-card-game';
 }
